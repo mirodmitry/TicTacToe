@@ -36,6 +36,7 @@ namespace TicTacToe.UI
             Console.WriteLine("Оберіть режим гри:");
             Console.WriteLine("1. Стандартна гра");
             Console.WriteLine("2. Гра з великими ставками");
+            Console.WriteLine("3. Тренувальна гра");
             Console.WriteLine("Ваш вибір:");
             string typeChoice = Console.ReadLine();
 
@@ -43,6 +44,11 @@ namespace TicTacToe.UI
             {
                 gameType = "highstakes";
                 stake = 50;
+            }
+            else if (typeChoice == "3")
+            {
+                gameType = "training";
+                stake = 0;
             }
             Console.WriteLine("Оберіть проти кого будете грати:");
             Console.WriteLine("1. Грати проти Бота");
